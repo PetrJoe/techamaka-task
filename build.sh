@@ -29,6 +29,8 @@ EOF
 
 # Create superuser account
 create_superuser
+python3 manage.py collectstatic --clear --noinput
+python3 manage.py collectstatic --noinput
 
 # mkdir -p /opt/render/project/src/static
 # echo "Collecting static files..."
